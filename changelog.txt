@@ -1,0 +1,4 @@
+v1.0
+--
+Connect USB HIDE device using hid4java library - 2018/09/28
+https://github.com/gary-rowe/hid4java
