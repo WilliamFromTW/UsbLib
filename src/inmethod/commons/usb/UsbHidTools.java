@@ -83,9 +83,9 @@ public class UsbHidTools implements HidServicesListener {
 
 		int val = hidDevice.write(aCmd, aCmd.length, (byte) 0x00);
 		if (val >= 0) {
-			System.out.println("command sent success!");
+			;//System.out.println("command sent success!");
 		} else {
-			System.err.println(hidDevice.getLastErrorMessage());
+			;//System.err.println(hidDevice.getLastErrorMessage());
 			throw new Exception("error , message = " + hidDevice.getLastErrorMessage());
 		}
 
@@ -112,17 +112,17 @@ public class UsbHidTools implements HidServicesListener {
 
 	@Override
 	public void hidDeviceAttached(HidServicesEvent event) {
-		System.out.println("Device attached: " + event);
+		;//System.out.println("Device attached: " + event);
 	}
 
 	@Override
 	public void hidDeviceDetached(HidServicesEvent event) {
-		System.err.println("Device detached: " + event);
+		;//System.err.println("Device detached: " + event);
 	}
 
 	@Override
 	public void hidFailure(HidServicesEvent event) {
-		System.err.println("HID failure: " + event);
+		;//System.err.println("HID failure: " + event);
 	}
 
 }
