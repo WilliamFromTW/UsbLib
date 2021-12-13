@@ -1,3 +1,7 @@
+v1.1
+--
+bump to hid4java 0.7.0 - 2021/12/13
+
 v1.0
 --
 Connect USB HID device using hid4java library - 2018/09/28
